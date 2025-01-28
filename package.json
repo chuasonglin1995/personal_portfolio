@@ -4,7 +4,12 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
     "cra-template": "1.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.8",
     "react-bootstrap-icons": "^1.11.5",
@@ -16,6 +21,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "node server.js",
+    "dev": "concurrently \"npm start\" \"npm run server\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
